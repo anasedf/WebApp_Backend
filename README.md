@@ -1,4 +1,4 @@
-# 🚁 Drone API (Assignment 2)
+# Drone API (Assignment 1)
 
 API สำหรับจัดการข้อมูลโดรน โดยแยกเป็น 3 ส่วนหลัก:  
 - `configs` สำหรับข้อมูลตั้งต้นของโดรน
@@ -60,4 +60,4 @@ node index.js
 
 Anas Nilaoh  
 IoT System & Information Engineering - KMITL  
-2025 Internship Project
+2025 01236337 WEB APPLICATION DEVELOPMENT

@@ -10,23 +10,21 @@ API สำหรับจัดการข้อมูลโดรน โดย
 ## 📦 Project Structure
 
 ```
-src/
-├── app.js                # รวม route ทั้งหมด
-├── index.js             # จุดเริ่มต้นของโปรแกรม
-├── routes/
-│   ├── configs.js        # Router: /configs/:droneId
-│   ├── status.js         # Router: /status/:droneId
-│   └── logs.js           # Router: /logs + /logs/:droneId
-├── controllers/
-│   ├── configController.js
-│   ├── statusController.js
-│   └── logController.js
-├── services/
-│   ├── configService.js  # ดึงข้อมูลจาก Google Apps Script
-│   └── logService.js     # POST logs ไปยัง PocketBase
-├── utils/
-│   └── tempConvert.js    # แปลง celsius → fahrenheit
-.env                      # เก็บค่า CONFIG_SERVER และ LOG_SERVER
+WebApp_Backend/
+├── src/
+│   ├── routes/
+│   │   ├── configs.js        ← /configs/:droneId
+│   │   ├── status.js         ← /status/:droneId
+│   │   ├── logs.js           ← /logs/:droneId & POST /logs
+│   ├── services/
+│   │   ├── configService.js  ← Logic สำหรับเรียก Config Server
+│   │   ├── logService.js     ← Logic สำหรับเรียก PocketBase
+│   └── app.js                ← Main App (import express, routes)
+├── .env
+├── .gitignore
+├── package.json
+├── index.js                  ← ใช้เรียก src/app.js
+
 ```
 
 ---

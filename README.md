@@ -7,7 +7,7 @@ API สำหรับจัดการข้อมูลโดรน โดย
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 WebApp_Backend/
@@ -29,7 +29,7 @@ WebApp_Backend/
 
 ---
 
-## 🚀 Start Project
+## Start Project
 
 ### 1. ติดตั้ง dependency
 
@@ -54,7 +54,7 @@ node index.js
 
 ---
 
-## 👨‍💻 ผู้พัฒนา
+## ผู้พัฒนา
 
 Anas Nilaoh  
 IoT System & Information Engineering - KMITL  

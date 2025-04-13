@@ -9,8 +9,10 @@ app.get('/', (req, res) => {
     res.send('🛫 Drone API is ready! Use /configs/:id, /logs/:id, /status/:id');
   });
   
-  
+app.use(cors());
+
 app.use(express.json());
+
 app.use('/configs', configRoutes);
 app.use('/status', statusRoutes);
 app.use('/logs', logsRoutes);
